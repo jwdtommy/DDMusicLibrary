@@ -91,9 +91,16 @@
    
    3.7 是否是连续播放
    
+   DDAudioManager.getInstance(context).isGoAhead();  
    
+   3.8 是否正在播放
    
+   DDAudioManager.getInstance(context).isPlaying();  
    
+   3.8 是否准备完毕
+   
+   DDAudioManager.getInstance(context).isPrepared();  
+  
 4.音频操作回调监听
 
    	private class Receiver extends DDSingleAudioBroadCastReceiver {
