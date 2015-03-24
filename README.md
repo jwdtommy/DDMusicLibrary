@@ -59,7 +59,7 @@
    
    DDAudioManager.getInstance(context).setGoAhead(true);
    
-3.获取状态信息
+3.获取状态信息 （V2.0时会增加缓冲进度的获取）
 
    3.1 音频服务是否连接成功
    
@@ -130,9 +130,10 @@
 		}
 	}
 	
-   5.定时任务，如更新播放进度条 (V2.0时会增加缓冲进度的获取)
+   5.定时任务，如更新播放进度条，缓冲进度条
    
    AudioTimer.getInstance().putHandler(handler);
+   
    AudioTimer.getInstance().startTimer();
 
 
